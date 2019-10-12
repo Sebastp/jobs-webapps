@@ -1,26 +1,28 @@
 require('dotenv').config()
 
 const express = require("express");
-const FileSync = require('lowdb/adapters/FileSync')
 
-import low from 'lowdb';
 import http from "http"
 import helmet from "helmet"
 
 
 import apollo from "~/core/apollo";
 
-(async function () {
-  //load Database
-  const jobsDbAdapt = new FileSync('../docs/jobs.json'),
-        characterDbAdapt = new FileSync('../docs/characteristics.json'),
-        characterDb = low(characterDbAdapt),
-        jobsDb = await low(jobsDbAdapt)
 
+
+
+
+(async function () {
   const {
-    PORT = 8080,
+    PORT = 8080
   } = process.env
 
+
+
+
+
+
+  // console.log(dataBase.read());
 
   const app = express()
 

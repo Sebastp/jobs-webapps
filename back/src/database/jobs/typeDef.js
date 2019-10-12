@@ -3,11 +3,13 @@ import { gql } from 'apollo-server-express'
 
 const typeDefs = gql`
   extend type Query {
-    jobs: String
+    jobs: [Job]
   }
 
   type Job {
-    uid: String
+    title: String
+    description: String
+    similarJobs: String
   }
 `
 

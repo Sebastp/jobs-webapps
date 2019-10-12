@@ -1,9 +1,19 @@
 const FileSync = require('lowdb/adapters/FileSync')
 import low from 'lowdb';
 
-const jobsDb = low(new FileSync('../docs/jobs.json'))
-const characterDb = low(new FileSync('../docs/characteristics.json'))
+
+const dataBase = low(new FileSync('db.json'))
+
+// dataBase.defaults({ jobs: [
+//       {"title":"John", "description":"Hancock", "similarJobs": "ase"},
+//       {"title":"John", "description":"Hancock", "similarJobs": "ase"},
+//       {"title":"John", "description":"Hancock", "similarJobs": "ase"}
+//     ]
+//   }).write();
+
+// dataBase.read().then(() => console.log('Content of my_project/db.json is loaded'))
+// dataBase.defaults(jobs: [{ title: '', description: '', similarJobs: '' }]).write()
 
 // export default jobsDb
 // export default characterDb
-export default {jobsDb, characterDb};
+export default dataBase

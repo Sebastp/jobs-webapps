@@ -1,8 +1,9 @@
-import {jobsDb} from '~/core/db'
+import dataBase from '~/core/db'
+
 
 const Query = {
   jobs: () => {
-    return jobsDb.read();
+    return dataBase.get('jobs').value();
   }
 }
 
