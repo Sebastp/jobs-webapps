@@ -1,22 +1,26 @@
-// import { merge } from 'lodash'
-const blocks = require('@src/database');
+import { merge } from 'lodash'
+const blocks = require('~/database');
 
 
 const typeDefs = []
-const resolverFragments = []
+const resolverArray = []
 
-
+// define root types for extending later
+// type Mutation
+// type Subscription
+typeDefs.push(`
+  type Query
+`)
 
 for (const block of Object.values(blocks)) {
   if (block.typeDefs) {
     typeDefs.push(block.typeDefs)
   }
   if (block.resolvers) {
-    console.log(block.resolvers);
-    resolverFragments.push(block.resolvers)
+    resolverArray.push(block.resolvers)
   }
 }
 
-console.log(resolverFragments);
-export { typeDefs }
-// export const resolvers = merge(...resolverFragments)
+
+const resolvers = merge(...resolverArray)
+export { typeDefs, resolvers }

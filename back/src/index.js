@@ -1,15 +1,15 @@
-require('module-alias/register')
 require('dotenv').config()
-const express = require("express");
-const http = require("http");
-const helmet = require("helmet");
 
-const {apollo} = require("@src/core/apollo");
+const express = require("express");
+import http from "http"
+import helmet from "helmet"
+
+
+import apollo from "~/core/apollo";
 
 const {
   PORT = 8080,
 } = process.env
-
 
 const app = express()
 

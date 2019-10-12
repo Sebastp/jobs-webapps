@@ -1,5 +1,5 @@
-const {ApolloServer} = require("apollo-server-express");
-const {typeDefs, resolvers} = require("@src/core/schema");
+import {ApolloServer} from "apollo-server-express"
+import {typeDefs, resolvers} from "~/core/schema"
 
 
 const { PORT = 8080 } = process.env;
@@ -16,4 +16,4 @@ const apollo = new ApolloServer({
   }
 });
 
-exports.default apollo
+export default apollo

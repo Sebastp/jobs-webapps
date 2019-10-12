@@ -1,5 +1,9 @@
-export default Query = {
+const Query = {
   jobs: () => {
-    return null;
+    return 'null';
   }
+}
+
+export default {
+  Query
 }

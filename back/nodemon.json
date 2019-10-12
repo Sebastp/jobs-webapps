@@ -1,4 +1,10 @@
 {
+  "env": {
+  "BABEL_DISABLE_CACHE": 1
+  },
+  "execMap": {
+    "js": "babel-node"
+  },
   "verbose": false,
   "ignore": ["node_modules"],
   "ext": ".js,.json,.gql,.graphql,.env",
