@@ -1,0 +1,30 @@
+{
+  "name": "full-stack-technical-test",
+  "version": "0.1.0",
+  "author": "Sebastian Pobochav",
+  "license": "ISC",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "all": "concurrently --kill-others-on-fail \"npm run back\" \"npm run front\"",
+    "back": "cd back && npm run start",
+    "front": "cd front && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
