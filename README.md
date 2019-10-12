@@ -112,3 +112,8 @@ In the project directory, you can run:
 
 ### `npm run all`
 Runs 'npm run back' and 'npm run front' concurrently in one console
+
+
+
+-------------COMMENTS----------------
+I tried not to use Babel on the backend, but tbh I don't see a point in it.
