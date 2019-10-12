@@ -1,6 +1,8 @@
+import {jobsDb} from '~/core/db'
+
 const Query = {
   jobs: () => {
-    return 'null';
+    return jobsDb.read();
   }
 }
 
