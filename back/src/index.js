@@ -1,10 +1,6 @@
-/* ------------------------------------------
-   Express server
---------------------------------------------- */
-
-
-import {} from 'dotenv/config'
-import express from 'express'
+require('module-alias/register')
+require('dotenv').config()
+const express = require("express");
 
 const {
   PORT = 8080,

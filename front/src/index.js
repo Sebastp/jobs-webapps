@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './assets/sass/main.scss'
+
 
 ReactDOM.render(
   (<h1>

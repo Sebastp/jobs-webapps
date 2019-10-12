@@ -1,7 +1,7 @@
 {
   "name": "full-stack-technical-test-backend",
   "version": "1.0.0",
-  "main": "./src/server.js",
+  "main": "./src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "nodemon ./src/server.js"
@@ -11,7 +11,12 @@
     "express": "^4.16.4",
     "graphql": "^14.5.8",
     "helmet": "^3.21.1",
-    "lowdb": "^1.0.0"
+    "lowdb": "^1.0.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.7.4"
+  },
+  "_moduleAliases": {
+    "@src": "src"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"

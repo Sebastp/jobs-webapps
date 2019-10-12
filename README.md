@@ -106,4 +106,9 @@ If you encounter any issue or if you have questions do not hesitate to reach us 
 
 ## Candidate notes
 
-*(Feel free to write anything you find relevant down below)*
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run all`
+Runs 'npm run back' and 'npm run front' concurrently in one console
