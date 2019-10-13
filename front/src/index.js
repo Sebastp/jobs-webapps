@@ -1,11 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { ApolloProvider } from 'react-apollo'
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/sass/main.scss'
+
+import apollo from './core/apollo'
+
+import App from './components/App'
 
 
 ReactDOM.render(
-  (<h1>
-    Chance Test starts here
-  </h1>),
+  <ApolloProvider client={apollo}>
+    <App/>
+  </ApolloProvider>,
+
   document.getElementById('root')
 )

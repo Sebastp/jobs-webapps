@@ -4,13 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 
-import Landing from './Landing'
-import Topbar from './Topbar'
-import LoadingScreen from './LoadingScreen'
-import UploadModal from './UploadModal'
-
-import { ModalProvider } from './ModalContext';
-import { LogosProvider } from './LogosContext';
+import Landing from './pages/Landing'
+import Topbar from './uielements/Topbar'
 
 
 

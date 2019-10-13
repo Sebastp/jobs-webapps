@@ -1,5 +1,6 @@
 {
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
     "prettier"
   ],
@@ -13,11 +14,16 @@
     "node": true,
     "es6": true
   },
+  "settings": {
+    "import/resolver": "babel-plugin-root-import"
+  },
   "plugins": [
     "react",
+    "prettier"
   ],
   "rules": {
     "prettier/prettier": "error",
+    "import/no-webpack-loader-syntax": "off",
     "no-console": "off",
     "no-unused-vars": "warn",
     "semi": ["warn", "never"],
