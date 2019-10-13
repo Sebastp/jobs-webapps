@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
+import FullButton from './FullButton'
 
 const Topbar = () => (
   <div className='topbar'>
@@ -12,6 +13,9 @@ const Topbar = () => (
           <img src={require('../../assets/img/ChanceLogo.svg')} className="topbar-logobox__icon" alt="Logo"/>
         </Link>
       </div>
+      <FullButton>
+        Login
+      </FullButton>
     </header>
     <div className="topbar-bck"/>
   </div>
