@@ -13,9 +13,9 @@ const httpLink = new HttpLink({
 })
 
 
-
 const apollo = new ApolloClient({
   link: httpLink,
+  cache,
   credentials: 'include'
 })
 
