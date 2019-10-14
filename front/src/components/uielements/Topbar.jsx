@@ -7,17 +7,16 @@ import FullButton from './FullButton'
 
 const Topbar = () => (
   <div className='topbar'>
-    <header className='topbar-inner cont-width_0'>
-      <div className='topbar-logobox topbar__padding'>
+    <header className='topbar--inner cont-width_0'>
+      <div className='topbar--logobox'>
         <Link to={'/'}>
           <img src={require('../../assets/img/ChanceLogo.svg')} className="topbar-logobox__icon" alt="Logo"/>
         </Link>
       </div>
-      <FullButton>
+      <FullButton className='topbar--navBtn'>
         Login
       </FullButton>
     </header>
-    <div className="topbar-bck"/>
   </div>
 )
 

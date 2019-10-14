@@ -1,0 +1,84 @@
+.landing__header{
+  background-position: top;
+  position: relative;
+  color: $white;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  &--bck{
+    height: 100%;
+    width: 100vw;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+}
+
+.landing__boxDescs{
+  display: block;
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  &__li{
+    text-align: center;
+    display: inline-block;
+    &__icon{
+      height: 48px;
+      display: block;
+      margin: auto;
+    }
+
+    &__title{
+      margin-top: 15px;
+      font-weight: $medium;
+    }
+    &__desc{
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+      font-weight: $regular;
+      max-width: 285px;
+    }
+  }
+}
+
+
+.landing__bannerSect{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: $white;
+
+  h2{
+    flex: 1;
+    font-size: 38px;
+  }
+
+  p{
+    max-width: 550px;
+    font-size: 22px;
+    text-align: right;
+  }
+
+  &--bck{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    transform: translateX(-50%);
+    left: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
