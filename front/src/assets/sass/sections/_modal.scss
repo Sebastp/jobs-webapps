@@ -1,0 +1,65 @@
+.modalCont{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  height: 100%;
+  width: 100%;
+
+
+  &-inner{
+    height: 100%;
+
+    &__padding{
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-box{
+    background-color: $white;
+    margin: auto;
+    display: block;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 80px 60px 60px 60px;
+    border-radius: 5px;
+    text-align: center;
+
+    .componentHeader{
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .bck{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba($grey2, 0.4);
+  }
+}
+
+
+
+// =====================================================
+//    MEDIA QUERIES
+// =====================================================
+
+
+// Medium
+@media (min-width: 768px) {}
+// Large
+@media (max-width: 992px) {}
+// Extra large
+@media (max-width: 1225px) {
+}
+
+@media (max-width: 544px) {}

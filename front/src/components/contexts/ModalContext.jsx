@@ -11,6 +11,7 @@ export const ModalProvider = ({children}) =>{
   const [isShowing, setIsShowing] = useState(false);
 
   const toggle = () => {
+    console.log(isShowing);
     setIsShowing(!isShowing);
   }
 

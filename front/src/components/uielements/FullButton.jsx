@@ -8,8 +8,8 @@ const Button = styled.button`
   padding: 10px 70px;
 `;
 
-const FullButton = ({children}) => (
-  <Button>
+const FullButton = ({children, clickFunct}) => (
+  <Button onClick={clickFunct}>
     {children}
   </Button>
 )

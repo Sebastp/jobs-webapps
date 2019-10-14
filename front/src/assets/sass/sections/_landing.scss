@@ -2,9 +2,19 @@
   background-position: top;
   position: relative;
   color: $white;
+  font-weight: $regular;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  h1{
+    font-size: 52px;
+  }
+
+  p{
+    font-size: 22px;
+    margin-top: 15px;
+  }
 
   &--bck{
     height: 100%;
@@ -80,5 +90,44 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.landing__twiceSect{
+  padding-top: 140px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  &__textcol{
+    flex: 1;
+    padding-left: 30px;
+    text-align: right;
+
+    h2{
+      margin-bottom: 25px;
+      font-size: 38px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+  }
+
+  &__textcol{
+    max-width: 540px;
+  }
+}
+
+
+.landing__footer{
+  padding: 100px 70px;
+  text-align: left;
+  border-top: 1px solid #EDEDED;
+
+  span{
+    font-size: 14px;
   }
 }

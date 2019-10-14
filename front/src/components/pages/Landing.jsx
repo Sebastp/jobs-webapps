@@ -59,7 +59,7 @@ const Landing = () => {
         <img src={require('../../assets/img/landinglastImg.png')} className="landing__twiceSect__imgcol" alt="ad image"/>
       </div>
 
-      <footer>
+      <footer className="landing__footer">
         <span>© 2019 Chance All rights reserved - Legal Mentions</span>
       </footer>
     </div>

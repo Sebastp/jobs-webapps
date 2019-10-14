@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Landing from './pages/Landing'
 
 import Topbar from './uielements/Topbar'
-import LoadModal from './uielements/LoadModal'
+import LoginModal from './uielements/LoginModal'
 
 import { ModalProvider } from './contexts/ModalContext'
 
@@ -18,7 +18,7 @@ const App = () => (
   <Router>
     <Fragment>
       <ModalProvider>
-        <LoadModal/>
+        <LoginModal/>
         <Topbar/>
 
         <Switch>
@@ -26,7 +26,7 @@ const App = () => (
             component={props => (
               <Landing {...props}/>
             )}
-            />
+          />
         </Switch>
       </ModalProvider>
     </Fragment>

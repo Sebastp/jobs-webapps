@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useEffect} from 'react'
 import ReactDOM from 'react-dom'
 
 
@@ -8,7 +8,7 @@ import { ModalContext } from '../contexts/ModalContext'
 
 
 
-const LoadModal = () => {
+const LoginModal = () => {
   const {toggle, isShowing} = useContext(ModalContext)
 
 
@@ -21,7 +21,7 @@ const LoadModal = () => {
           <div className='modalCont-box'>
             <div className="center">
               <h2 className='componentHeader'>
-                Drag & Drop Your Logo
+                Sign In
               </h2>
 
             </div>
@@ -29,11 +29,11 @@ const LoadModal = () => {
         </div>
       </div>
       <div className='bck' onClick={toggle}/>
-    </div>, document.getElementById('index')
+    </div>, document.getElementById('root')
   ) : null)
 }
 
 
 
 
-export default LoadModal
+export default LoginModal
