@@ -6,6 +6,8 @@ import ReactDOM from 'react-dom'
 
 import { ModalContext } from '../contexts/ModalContext'
 
+import FullButton from './FullButton'
+import LabeledInput from './LabeledInput'
 
 
 const LoginModal = () => {
@@ -24,6 +26,12 @@ const LoginModal = () => {
                 Sign In
               </h2>
 
+              <LabeledInput labelText={'Email'}  inputPlaceholder={'Type your email'}/>
+              <LabeledInput labelText={'Password'}  inputPlaceholder={'Type your password'}/>
+
+              <FullButton className='topbar--navBtn' clickFunct={()=>console.log('login funct')}>
+                Login
+              </FullButton>
             </div>
           </div>
         </div>
