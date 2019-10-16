@@ -4,7 +4,7 @@ import React from 'react';
 import HomeSubPage from './HomeSubPage'
 
 
-const HomeJobsItem = ({name, desc}) => {
+const HomeItem = ({name, desc}) => {
   return (
     <li>
       <h4>{name}</h4>
@@ -13,4 +13,4 @@ const HomeJobsItem = ({name, desc}) => {
   )
 }
 
-export default HomeJobsItem
+export default HomeItem

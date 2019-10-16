@@ -1,19 +1,22 @@
 import React, { useState, useContext } from 'react';
+import { useQuery } from 'react-apollo-hooks';
 
 
 import { HomeContext } from '../contexts/HomeContext'
+import { getJobs } from '../../graphql'
 
 import HomeSubPage from './HomeSubPage'
-import HomeJobsItem from './HomeJobsItem'
+import HomeItem from './HomeItem'
 
 
 const HomeJobs = (props) => {
   const {category, setCategory} = useContext(HomeContext)
+  const { data, error, loading } = useQuery(getJobs)
 
   return (
     <HomeSubPage headerBig="All Jobs" subButton={{name: "Create a new Job", funct: ()=>setCategory('Create Job') }}>
       <ul>
-        <HomeJobsItem name="Job Name" desc="Job desc"/>
+        <HomeItem name="Job Name" desc="Job desc"/>
       </ul>
     </HomeSubPage>
   )
