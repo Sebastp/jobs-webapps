@@ -3,7 +3,7 @@ import dataBase from '~/core/db'
 
 const Query = {
   characteristics: () => {
-    return dataBase.get('jobs').value();
+    return dataBase.get('characteristics').value();
   }
 }
 

@@ -6,6 +6,7 @@ import { HomeContext } from '../contexts/HomeContext'
 
 
 import HomeJobs from './HomeJobs'
+import HomeCharact from './HomeCharact'
 
 
 const Home = () => {
@@ -17,6 +18,9 @@ const Home = () => {
   switch (category) {
     case 'Jobs':
       subPageComponent = <HomeJobs/>
+      break;
+    case 'Characteristics':
+      subPageComponent = <HomeCharact/>
       break;
     default:
       subPageComponent = <HomeJobs/>
