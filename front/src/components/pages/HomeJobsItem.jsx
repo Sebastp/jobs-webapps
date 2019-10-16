@@ -4,11 +4,12 @@ import React from 'react';
 import HomeSubPage from './HomeSubPage'
 
 
-const HomeJobsItem = (props) => {
+const HomeJobsItem = ({name, desc}) => {
   return (
-    <HomeSubPage headerBig="All Jobs" subButton="Create a new Job">
-
-    </HomeSubPage>
+    <li>
+      <h4>{name}</h4>
+      <span>{desc}</span>
+    </li>
   )
 }
 

@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
+
+
+import { HomeContext } from '../contexts/HomeContext'
 
 
 import HomeJobs from './HomeJobs'
@@ -7,7 +10,8 @@ import HomeJobs from './HomeJobs'
 
 const Home = () => {
   const pageCategories = ['Jobs','Characteristics']
-  const [category, setCategory] = useState('Jobs')
+  const {category, setCategory} = useContext(HomeContext)
+
   let subPageComponent = null
 
   switch (category) {
@@ -17,7 +21,6 @@ const Home = () => {
     default:
       subPageComponent = <HomeJobs/>
   }
-
 
   return (
     <div className="home">

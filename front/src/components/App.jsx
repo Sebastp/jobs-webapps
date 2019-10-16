@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import LoginModal from './uielements/LoginModal'
 
 import { ModalProvider } from './contexts/ModalContext'
+import { HomeProvider } from './contexts/HomeContext'
 
 
 
@@ -18,20 +19,22 @@ const App = () => (
   <Router>
     <Fragment>
       <ModalProvider>
-        <LoginModal/>
+        <HomeProvider>
+          <LoginModal/>
 
-        <Switch>
-          <Route exact path="/"
-            component={props => (
-              <Landing {...props}/>
-            )}
-          />
-          <Route exact path="/home"
-            component={props => (
-              <Home {...props}/>
-            )}
-          />
-        </Switch>
+          <Switch>
+            <Route exact path="/"
+              component={props => (
+                <Landing {...props}/>
+              )}
+            />
+            <Route exact path="/home"
+              component={props => (
+                <Home {...props}/>
+              )}
+            />
+          </Switch>
+        </HomeProvider>
       </ModalProvider>
     </Fragment>
   </Router>

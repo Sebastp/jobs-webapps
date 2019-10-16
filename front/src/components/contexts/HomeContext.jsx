@@ -2,21 +2,16 @@ import React, {createContext, useState} from 'react';
 
 
 export const HomeContext = createContext({
-  isShowing: null,
-  toggle: () => {}
+  category: 'Jobs',
+  setCategory: () => {}
 });
 
 
 export const HomeProvider = ({children}) =>{
-  const [isShowing, setIsShowing] = useState(false);
-
-  const toggle = () => {
-    console.log(isShowing);
-    setIsShowing(!isShowing);
-  }
+  const [category, setCategory] = useState('Jobs')
 
   return(
-    <HomeContext.Provider value={{toggle, isShowing}}>
+    <HomeContext.Provider value={{category, setCategory}}>
       {children}
     </HomeContext.Provider>
   )
