@@ -11,13 +11,24 @@ import HomeItem from './HomeItem'
 
 const HomeJobs = (props) => {
   const {category, setCategory} = useContext(HomeContext)
-  const { data, error, loading } = useQuery(getJobs)
+  const { data, error, loading:jobsLoading } = useQuery(getJobs)
+
 
   return (
     <HomeSubPage headerBig="All Jobs" subButton={{name: "Create a new Job", funct: ()=>setCategory('Create Job') }}>
-      <ul>
-        <HomeItem name="Job Name" desc="Job desc"/>
-      </ul>
+      {
+        jobsLoading?(
+          'Loading'
+        ):(
+          <ul>
+            {
+              (data.jobs).map((jobOjb, i)=>(
+                <HomeItem name={jobOjb.title} desc={jobOjb.description} key={i}/>
+              ))
+            }
+          </ul>
+        )
+      }
     </HomeSubPage>
   )
 }
