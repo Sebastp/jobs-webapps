@@ -6,7 +6,7 @@ import HomeSubPage from './HomeSubPage'
 
 const HomeJobs = (props) => {
   return (
-    <HomeSubPage headerBig="All Jobs" subHeader="Create a new Job +">
+    <HomeSubPage headerBig="All Jobs" subButton={{name: "Create a new Job", funct:'createjob'}}>
 
     </HomeSubPage>
   )
