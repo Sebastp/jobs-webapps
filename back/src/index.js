@@ -7,6 +7,7 @@ import helmet from "helmet"
 
 
 import apollo from "~/core/apollo";
+import router from '~/core/router'
 
 
 
@@ -31,6 +32,10 @@ import apollo from "~/core/apollo";
 
 
   apollo.applyMiddleware({ app })
+
+
+  // Handle routes
+  app.use('/', router)
 
 
   const httpServer = http.createServer(app)

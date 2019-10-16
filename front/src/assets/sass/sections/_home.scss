@@ -1,0 +1,52 @@
+.home{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: $grey5;
+
+  &__leftcol{
+    width: 220px;
+    background-color: $white;
+    padding: 30px 40px;
+
+    ul{
+      margin-top: 120px;
+      width: 100%;
+      display: block;
+
+      .home__leftcol__listli{
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        margin-bottom: 12px;
+        cursor: pointer;
+
+        &:last-child{
+          margin-bottom: 0px;
+        }
+
+        .lilabel{
+          display: inline-block;
+          vertical-align: middle;
+          width: 10px;
+          height: 10px;
+          margin-right: 10px;
+          background-color: $grey2;
+        }
+
+        &.active{
+          font-weight: $semi-bold;
+          .lilabel{
+            background-color: $pink;
+          }
+        }
+      }
+    }
+  }
+
+  &__main{
+    display: inline-block;
+    flex: 1;
+  }
+}

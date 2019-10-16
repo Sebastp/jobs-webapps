@@ -9,6 +9,7 @@
 
   &-inner{
     height: 100%;
+    max-width: 525px;
 
     &__padding{
       position: relative;
@@ -26,14 +27,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    padding: 80px 60px 60px 60px;
-    border-radius: 5px;
-    text-align: center;
+    padding: 60px 80px;
+    text-align: left;
 
     .componentHeader{
       margin-bottom: 50px;
     }
-
   }
 
   .bck{

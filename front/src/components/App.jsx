@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 import Landing from './pages/Landing'
+import Home from './pages/Home'
 
-import Topbar from './uielements/Topbar'
 import LoginModal from './uielements/LoginModal'
 
 import { ModalProvider } from './contexts/ModalContext'
@@ -19,12 +19,16 @@ const App = () => (
     <Fragment>
       <ModalProvider>
         <LoginModal/>
-        <Topbar/>
 
         <Switch>
           <Route exact path="/"
             component={props => (
               <Landing {...props}/>
+            )}
+          />
+          <Route exact path="/home"
+            component={props => (
+              <Home {...props}/>
             )}
           />
         </Switch>
