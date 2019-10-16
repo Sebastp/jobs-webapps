@@ -6,7 +6,7 @@ import HomeSubPage from './HomeSubPage'
 
 const HomeItem = ({name, desc}) => {
   return (
-    <li>
+    <li className="HomeItem">
       <h4>{name}</h4>
       <span>{desc}</span>
     </li>

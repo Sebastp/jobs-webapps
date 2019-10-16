@@ -76,6 +76,7 @@
 
       &__mainCont{
         padding: 0 60px;
+        max-width: 1550px;
 
         .mainCont__header{
           display: block;
@@ -100,6 +101,31 @@
             display: inline-block;
             width: auto;
             padding: 0;
+          }
+        }
+
+        main{
+          width: 100%;
+          margin-top: 20px;
+
+          .HomeItem{
+            display: block;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            background-color: $white;
+            border: 1px solid $grey4;
+            h4{
+              font-size: 16px;
+              margin-bottom: 6px;
+            }
+            span{
+              color: #85868A;
+              font-size: 14px;
+            }
+
+            &:last-child{
+              margin-bottom: 0px;
+            }
           }
         }
       }
